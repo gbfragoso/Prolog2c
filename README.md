@@ -10,7 +10,8 @@ An prolog generator that receive an expression (logic or arithmetic) and pass it
 gcc -o teste pcode.c rpn2pci.c main.c
 
 # Limitation
-This implementation of  converter does not accept unnary operators. 
+* This prolog implementation does not accept unnary operators.
+* The logic prolog implementation accept other numbers than 0,1, but the pcode execution will not work properly in this cases.
 
 # Example
 1. Open logic2rpn.pl to generate rpn for logic expressions or open expr2rpn to generate arithmetic expressions;
