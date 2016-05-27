@@ -13,11 +13,11 @@ typedef char * string;
 int main (int argc, char **argv){
 	
 	// Vector with only integers, used as a datastore
-	int stack[50] = {-10,-10,-10,-10,-10,-10,-10,-10,-10,-10,-10,-10,-10,-10,-10};
-    int productions[50], i;	    							// Result of Pushdown Automata
-    string rpn = (string)malloc(50*sizeof(char));               								// Reverse Polish Notation
+	int stack[50] = {3,3,3,3,3,3,3,3,3,3,3,3,3,3,3};
+	int productions[50], i;	    							// Result of Pushdown Automata
+    	string rpn = (string)malloc(50*sizeof(char));               			// Reverse Polish Notation
     
-    FILE *input = fopen("expr.txt","r");
+    	FILE *input = fopen("expr.txt","r");
 	FILE *output = fopen("output.txt", "w");
 	
 	if(input !=NULL){
